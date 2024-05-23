@@ -13,6 +13,7 @@ app.get("/", (req, res) => {
   res.render("index", {
     titulo: "index",
     parrafo: "soy un texto EJS",
+    footer: "Soy el footer de index",
   });
 });
 app.get("/alumnos", (req, res) => {
@@ -20,7 +21,8 @@ app.get("/alumnos", (req, res) => {
   res.render("alumnos", {
     titulo: "alumnos",
     parrafo: "soy un texto EJS",
-    footer: "Soy el footer de alumnos"
+    footer: "Soy el footer de alumnos",
+
   });
 });
 app.get("/cursos", (req, res) => {
